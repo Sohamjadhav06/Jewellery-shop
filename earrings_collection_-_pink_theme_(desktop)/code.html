@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Earrings Collection | Potdar Jewellery</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f77b91",
+                        "accent-pink": "#fdf2f2",
+                        "accent-gold": "#d4af37",
+                        "background-light": "#f6f8f8",
+                        "background-dark": "#101f22",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        .product-card:hover .quick-view { opacity: 1; transform: translateY(0); }
+        .material-symbols-outlined { vertical-align: middle; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 transition-colors duration-300">
+<!-- Sticky Top Header Section -->
+<div class="sticky top-0 z-50 shadow-sm">
+<!-- Live Gold Rate Bar -->
+<div class="bg-slate-900 dark:bg-slate-800 text-white py-1.5 px-4 md:px-10 flex justify-between items-center text-[10px] md:text-xs tracking-wider">
+<div class="flex gap-4">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">trending_up</span> LIVE GOLD RATE: 24K <span class="text-primary font-bold">₹6,250</span></span>
+<span class="flex items-center gap-1">22K <span class="text-primary font-bold">₹5,730</span></span>
+</div>
+<div class="hidden md:flex gap-4">
+<a class="hover:text-primary transition-colors" href="#">STORE LOCATOR</a>
+<a class="hover:text-primary transition-colors" href="#">TRACK ORDER</a>
+</div>
+</div>
+<!-- Main Navigation -->
+<header class="bg-white/95 dark:bg-background-dark/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 px-4 md:px-10 py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<!-- Logo -->
+<div class="flex items-center gap-2 group cursor-pointer">
+<div class="bg-primary p-1.5 rounded-lg text-white">
+<span class="material-symbols-outlined text-2xl">diamond</span>
+</div>
+<div class="flex flex-col leading-none">
+<h1 class="text-lg font-extrabold tracking-tight text-slate-900 dark:text-white">POTDAR</h1>
+<span class="text-[10px] tracking-[0.2em] text-slate-500 font-medium">JEWELLERY</span>
+</div>
+</div>
+<!-- Nav Links -->
+<nav class="hidden lg:flex items-center gap-8 text-sm font-semibold uppercase tracking-wide">
+<a class="hover:text-primary transition-colors" href="#">Gold</a>
+<a class="text-primary border-b-2 border-primary pb-1" href="#">Earrings</a>
+<a class="hover:text-primary transition-colors" href="#">Necklaces</a>
+<a class="hover:text-primary transition-colors" href="#">Rings</a>
+<a class="hover:text-primary transition-colors" href="#">Bangles</a>
+<a class="hover:text-primary transition-colors" href="#">Collections</a>
+</nav>
+<!-- Action Icons -->
+<div class="flex items-center gap-5">
+<div class="hidden sm:flex items-center bg-slate-100 dark:bg-slate-800 rounded-full px-4 py-1.5 border border-transparent focus-within:border-primary/50 transition-all">
+<span class="material-symbols-outlined text-slate-400 text-xl">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-32 xl:w-48 placeholder:text-slate-400" placeholder="Search..." type="text"/>
+</div>
+<button class="relative hover:text-primary transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+<span class="absolute -top-1 -right-1 bg-primary text-white text-[9px] rounded-full w-4 h-4 flex items-center justify-center">2</span>
+</button>
+<button class="relative hover:text-primary transition-colors">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="absolute -top-1 -right-1 bg-primary text-white text-[9px] rounded-full w-4 h-4 flex items-center justify-center">1</span>
+</button>
+<button class="lg:hidden">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+</div>
+<main class="max-w-7xl mx-auto px-4 md:px-10 py-6">
+<!-- Breadcrumb -->
+<nav class="flex text-xs font-medium text-slate-500 mb-8 items-center gap-2">
+<a class="hover:text-primary" href="#">Home</a>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span class="text-slate-900 dark:text-slate-100">Earrings</span>
+</nav>
+<!-- Category Header -->
+<div class="flex flex-col md:flex-row justify-between items-end gap-4 mb-10 border-b border-slate-200 dark:border-slate-800 pb-8">
+<div class="max-w-2xl">
+<h2 class="text-4xl font-extrabold text-slate-900 dark:text-white mb-3">Earrings Collection</h2>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">Discover our curated selection of premium Mia-inspired earrings. From contemporary studs to traditional jhumkas, each piece is crafted with exquisite detail to complement your modern aesthetic.</p>
+</div>
+<div class="flex gap-4">
+<div class="flex items-center gap-2 text-sm font-medium text-slate-500">
+<span>Sort by:</span>
+<select class="bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-lg text-sm focus:ring-primary focus:border-primary">
+<option>Recommended</option>
+<option>New Arrivals</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+</select>
+</div>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row gap-10">
+<!-- Sidebar Filters -->
+<aside class="w-full lg:w-64 space-y-8 flex-shrink-0">
+<div>
+<h3 class="font-bold text-sm uppercase tracking-wider mb-4 border-l-4 border-primary pl-3">Price Range</h3>
+<div class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded text-primary focus:ring-primary border-slate-300" type="checkbox"/>
+<span class="group-hover:text-primary">Under ₹10,000</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded text-primary focus:ring-primary border-slate-300" type="checkbox"/>
+<span class="group-hover:text-primary">₹10,000 - ₹25,000</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input checked="" class="rounded text-primary focus:ring-primary border-slate-300" type="checkbox"/>
+<span class="group-hover:text-primary">₹25,000 - ₹50,000</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded text-primary focus:ring-primary border-slate-300" type="checkbox"/>
+<span class="group-hover:text-primary">Above ₹50,000</span>
+</label>
+</div>
+</div>
+<div>
+<h3 class="font-bold text-sm uppercase tracking-wider mb-4 border-l-4 border-primary pl-3">Metal Type</h3>
+<div class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input checked="" class="rounded text-primary focus:ring-primary border-slate-300" type="checkbox"/>
+<span class="group-hover:text-primary">22kt Yellow Gold</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded text-primary focus:ring-primary border-slate-300" type="checkbox"/>
+<span class="group-hover:text-primary">18kt Rose Gold</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded text-primary focus:ring-primary border-slate-300" type="checkbox"/>
+<span class="group-hover:text-primary">White Gold</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded text-primary focus:ring-primary border-slate-300" type="checkbox"/>
+<span class="group-hover:text-primary">Platinum</span>
+</label>
+</div>
+</div>
+<div>
+<h3 class="font-bold text-sm uppercase tracking-wider mb-4 border-l-4 border-primary pl-3">Style</h3>
+<div class="flex flex-wrap gap-2">
+<button class="px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-700 text-xs font-semibold hover:border-primary hover:text-primary transition-all bg-white dark:bg-slate-800">Studs</button>
+<button class="px-3 py-1.5 rounded-full border border-primary text-primary text-xs font-semibold bg-primary/10">Hoops</button>
+<button class="px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-700 text-xs font-semibold hover:border-primary hover:text-primary transition-all bg-white dark:bg-slate-800">Drops</button>
+<button class="px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-700 text-xs font-semibold hover:border-primary hover:text-primary transition-all bg-white dark:bg-slate-800">Jhumkas</button>
+<button class="px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-700 text-xs font-semibold hover:border-primary hover:text-primary transition-all bg-white dark:bg-slate-800">Sui Dhaga</button>
+</div>
+</div>
+<div class="bg-accent-pink dark:bg-slate-800/50 p-6 rounded-xl border border-accent-gold/20">
+<h4 class="text-accent-gold font-extrabold text-sm mb-2">GOLD SCHEME</h4>
+<p class="text-xs text-slate-600 dark:text-slate-400 mb-4">Plan your future jewellery with our easy monthly saving schemes.</p>
+<button class="w-full text-white text-xs font-bold py-2 rounded-lg hover:bg-accent-gold/90 transition-all uppercase tracking-widest">Learn More</button>
+</div>
+</aside>
+<!-- Product Grid -->
+<div class="flex-1">
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8">
+<!-- Product 1: Studs -->
+<div class="product-card group bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-700 relative">
+<span class="absolute top-4 left-4 z-10 bg-pink-100 text-primary text-[10px] font-bold px-2 py-1 rounded tracking-widest uppercase">Bestseller</span>
+<div class="aspect-[4/5] overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Minimalist gold floral stud earrings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbpXoekN-b9JQV8Rll6jgeZCrnE17aMEnF83AwULNI3QI6JcFTdBhtW7ZPwFXPX7fW6oOP19yDcYWw6z-UU2j9ln51ByKJJuBiGpyLgkxfpFv1239c0h3C7OmlhRRgNFVYyUQqdpStsH9eNZmR3xw39vhJv9_j7dvxLX2ltopX1OpU__fQZV0GyXfJcZM3gkN8wtshE0jabL0V78tdmtHLa4MebY3xHaraTkeB3JUQY63ISrpjtoYUDwd_Uls0NHlZo-Q6ZAnvAf8D"/>
+<div class="quick-view absolute inset-x-0 bottom-0 p-4 opacity-0 translate-y-4 transition-all duration-300">
+<button class="w-full bg-white text-slate-900 font-bold py-3 rounded-lg text-xs uppercase tracking-widest shadow-lg hover:bg-primary hover:text-white transition-all">Quick View</button>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-slate-900 dark:text-white font-bold text-lg">Morning Bloom Studs</h3>
+<div class="flex text-accent-gold">
+<span class="material-symbols-outlined text-sm fill-1">star</span>
+<span class="text-xs font-bold ml-1">4.9</span>
+</div>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-xs mb-3">18kt Rose Gold • Diamond</p>
+<div class="flex items-center gap-3">
+<span class="text-xl font-extrabold text-primary">₹18,499</span>
+<span class="text-sm text-slate-400 line-through">₹22,000</span>
+</div>
+</div>
+</div>
+<!-- Product 2: Hoops -->
+<div class="product-card group bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-700 relative">
+<div class="aspect-[4/5] overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Classic circular 22kt yellow gold hoop earrings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8MlhIVhM270HcaxsABalod3sweYgsWsiR7KcfKgZYFkQnCttxXruaQTuMN7tdBRLJm_QrjIQSh-970jMeTKHnt9QjpgQ9NvIR_HYkINYAAvQ6N4kGAXr5IurVr8nSWdQJKQUr5arNDtakwcpuV1ujU3gVHNYioa1IfGTAlcE2zvbHpMHgShql1pSnC4cYM8Jx26VLIVl7b_xna3mEFwOscio8Jko4PWbxWaO8O8Kc_DckmLdG4s-4duQrbkZdlwWQ0CTqBv4YZZNO"/>
+<div class="quick-view absolute inset-x-0 bottom-0 p-4 opacity-0 translate-y-4 transition-all duration-300">
+<button class="w-full bg-white text-slate-900 font-bold py-3 rounded-lg text-xs uppercase tracking-widest shadow-lg hover:bg-primary hover:text-white transition-all">Quick View</button>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-slate-900 dark:text-white font-bold text-lg mb-1">Eternal Circle Hoops</h3>
+<p class="text-slate-500 dark:text-slate-400 text-xs mb-3">22kt Yellow Gold</p>
+<div class="flex items-center gap-3">
+<span class="text-xl font-extrabold text-primary">₹32,950</span>
+</div>
+</div>
+</div>
+<!-- Product 3: Jhumkas -->
+<div class="product-card group bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-700 relative">
+<span class="absolute top-4 left-4 z-10 bg-accent-gold text-white text-[10px] font-bold px-2 py-1 rounded tracking-widest uppercase">New Arrival</span>
+<div class="aspect-[4/5] overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Traditional handcrafted gold jhumka with pearls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjjLqytHCx9ttKsslJV0cGIJnpP_41nDBpEkTVfg3I90tCpqXonQakxtjlTsNhsRNfVCzenW9vk_xyqERK74ia38Q5dXN_GsoBJhu9CVhN3Yk0GeYrNgnOB7uRgLPZGmcAkNiVP8ha0-Ct9u2gJ_zdga0aarbBpKxAR6EUolfxtasaS3uekWfJBfaC2zfMOwZtiZaRY3HbgheneOyYvtoRB4oADEkW6hvT-Cb_w2hSekt_5JFUyVJCAb5JvtP8dnyyZtdDtqm4k40h"/>
+<div class="quick-view absolute inset-x-0 bottom-0 p-4 opacity-0 translate-y-4 transition-all duration-300">
+<button class="w-full bg-white text-slate-900 font-bold py-3 rounded-lg text-xs uppercase tracking-widest shadow-lg hover:bg-primary hover:text-white transition-all">Quick View</button>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-slate-900 dark:text-white font-bold text-lg mb-1">Royal Heritage Jhumka</h3>
+<p class="text-slate-500 dark:text-slate-400 text-xs mb-3">22kt Yellow Gold • South Sea Pearl</p>
+<div class="flex items-center gap-3">
+<span class="text-xl font-extrabold text-primary">₹54,200</span>
+<span class="text-sm text-slate-400 line-through">₹58,500</span>
+</div>
+</div>
+</div>
+<!-- Product 4: Drops -->
+<div class="product-card group bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-700 relative">
+<div class="aspect-[4/5] overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Modern geometric gold drop earrings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0wNb_EVhB0KXgaFuQCE3khf5IBAVY2CNjMbSV9FmaDJOn3deBfccHho7rynnOqagn9BRgHTtpjV3aZCrdu25S_WVb3L81DtL8WR04O88BvyI_GmZC-p7UkRhX18bDyit4J9FNwdhSnXMfdgfyKAuw_EHEzlvER4T5MH2zrfWkIE1QHoihTlMjMseNtI-tXgf0QfaEKnwyfWwYytspVz4NIxHPAWUPLNkVdPQywaK7HO-H-q7Us7luq0Vzu_Cxj8prd7tPL_38-FM0"/>
+<div class="quick-view absolute inset-x-0 bottom-0 p-4 opacity-0 translate-y-4 transition-all duration-300">
+<button class="w-full bg-white text-slate-900 font-bold py-3 rounded-lg text-xs uppercase tracking-widest shadow-lg hover:bg-primary hover:text-white transition-all">Quick View</button>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-slate-900 dark:text-white font-bold text-lg mb-1">Cascade Drop Earrings</h3>
+<p class="text-slate-500 dark:text-slate-400 text-xs mb-3">18kt White Gold • Emerald</p>
+<div class="flex items-center gap-3">
+<span class="text-xl font-extrabold text-primary">₹27,800</span>
+</div>
+</div>
+</div>
+<!-- Product 5: Sui Dhaga -->
+<div class="product-card group bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-700 relative">
+<div class="aspect-[4/5] overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Dainty gold threader earrings with diamond tips" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz85IDepvTKtZddifxcENunzKHTgw-4hJPPzA6LRjYwUPSFMYdJUz8QSFasRmq1OSOaMOuM78TTW8TbqAnMDhxrT7enjJxRqhgIFKTxeXoXeOzO0Y0ejoQzCvI8LEanqF5K5vxeLjtTLtm0yWO0ZlHgiKbjst4dP3qZuUQ7qLXnC3_IQHXXtwQ5xJbhWWJIhSP2pEUHcAdyAUZMp30wY7j33fIEg1CNqM6mPc6kFHCfi9hUsG8FGfi4_I3Y5_wXLhOg_Qbb6I9xzMc"/>
+<div class="quick-view absolute inset-x-0 bottom-0 p-4 opacity-0 translate-y-4 transition-all duration-300">
+<button class="w-full bg-white text-slate-900 font-bold py-3 rounded-lg text-xs uppercase tracking-widest shadow-lg hover:bg-primary hover:text-white transition-all">Quick View</button>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-slate-900 dark:text-white font-bold text-lg mb-1">Graceful Threader</h3>
+<p class="text-slate-500 dark:text-slate-400 text-xs mb-3">18kt Yellow Gold • Diamond</p>
+<div class="flex items-center gap-3">
+<span class="text-xl font-extrabold text-primary">₹12,600</span>
+</div>
+</div>
+</div>
+<!-- Product 6: Bestseller Studs -->
+<div class="product-card group bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100 dark:border-slate-700 relative">
+<span class="absolute top-4 left-4 z-10 bg-pink-100 text-primary text-[10px] font-bold px-2 py-1 rounded tracking-widest uppercase">Bestseller</span>
+<div class="aspect-[4/5] overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Contemporary square gold studs with diamond accent" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP_KulMnHhDkgV0qsxyfcJykx0OpQvedOu1ITFMJn51TQ9weTCMtUnVNRB1MMH72GF4LiixosreX9aEH9VEXGB89-kWXbbQ7ERwkYNkKcrzlGszTXBfohPKSV6VarFjXkRm_bRIZTSYcBjcK2uF9w6VOhvi9-thmvPTTG5_fpvGMedqLvTg5N0W7YKesmTpr31ShB8jcvN967gGXDbv87pQ41NwOgKYx2d9m5frlte59h7Jh6nFzqvW_9zjqqjtvZ-Q-l-9NAmgMIo"/>
+<div class="quick-view absolute inset-x-0 bottom-0 p-4 opacity-0 translate-y-4 transition-all duration-300">
+<button class="w-full bg-white text-slate-900 font-bold py-3 rounded-lg text-xs uppercase tracking-widest shadow-lg hover:bg-primary hover:text-white transition-all">Quick View</button>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-slate-900 dark:text-white font-bold text-lg mb-1">Urban Chic Studs</h3>
+<p class="text-slate-500 dark:text-slate-400 text-xs mb-3">14kt Rose Gold • Diamond</p>
+<div class="flex items-center gap-3">
+<span class="text-xl font-extrabold text-primary">₹9,990</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="mt-16 flex justify-center items-center gap-3">
+<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 text-slate-400 hover:border-primary hover:text-primary transition-all">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-white font-bold">1</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 hover:border-primary hover:text-primary font-bold">2</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 hover:border-primary hover:text-primary font-bold">3</button>
+<span class="text-slate-400 px-2">...</span>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 hover:border-primary hover:text-primary font-bold">12</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 text-slate-400 hover:border-primary hover:text-primary transition-all">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Our Promises Section -->
+<section class="bg-white dark:bg-slate-900 border-y border-slate-200 dark:border-slate-800 mt-20">
+<div class="max-w-7xl mx-auto px-4 md:px-10 py-16 grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="flex flex-col items-center text-center group cursor-default">
+<div class="w-14 h-14 rounded-full bg-accent-pink dark:bg-slate-800 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-all text-primary">
+<span class="material-symbols-outlined text-3xl">verified</span>
+</div>
+<h4 class="font-bold text-sm mb-1">BIS HALLMARKED</h4>
+<p class="text-xs text-slate-500">Certified Purity Guarantee</p>
+</div>
+<div class="flex flex-col items-center text-center group cursor-default">
+<div class="w-14 h-14 rounded-full bg-accent-pink dark:bg-slate-800 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-all text-primary">
+<span class="material-symbols-outlined text-3xl">assignment_return</span>
+</div>
+<h4 class="font-bold text-sm mb-1">15 DAYS RETURN</h4>
+<p class="text-xs text-slate-500">Hassle-free Exchange</p>
+</div>
+<div class="flex flex-col items-center text-center group cursor-default">
+<div class="w-14 h-14 rounded-full bg-accent-pink dark:bg-slate-800 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-all text-primary">
+<span class="material-symbols-outlined text-3xl">local_shipping</span>
+</div>
+<h4 class="font-bold text-sm mb-1">FREE SHIPPING</h4>
+<p class="text-xs text-slate-500">Insured Delivery Pan India</p>
+</div>
+<div class="flex flex-col items-center text-center group cursor-default">
+<div class="w-14 h-14 rounded-full bg-accent-pink dark:bg-slate-800 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-all text-primary">
+<span class="material-symbols-outlined text-3xl">support_agent</span>
+</div>
+<h4 class="font-bold text-sm mb-1">LIFETIME EXCHANGE</h4>
+<p class="text-xs text-slate-500">Best Resale Values</p>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-background-dark pt-20 pb-10 px-4 md:px-10">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<div class="space-y-6">
+<div class="flex items-center gap-2">
+<div class="bg-primary p-1.5 rounded-lg text-white">
+<span class="material-symbols-outlined text-2xl">diamond</span>
+</div>
+<div class="flex flex-col leading-none">
+<h1 class="text-lg font-extrabold tracking-tight text-slate-900 dark:text-white">POTDAR</h1>
+<span class="text-[10px] tracking-[0.2em] text-slate-500 font-medium">JEWELLERY</span>
+</div>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Modern jewellery for the contemporary woman. Crafting stories in gold and diamonds since 1995.</p>
+<div class="flex gap-4">
+<a class="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-lg">public</span></a>
+<a class="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-lg">camera_alt</span></a>
+<a class="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-lg">share</span></a>
+</div>
+</div>
+<div>
+<h5 class="font-bold text-sm mb-6 uppercase tracking-widest">Customer Care</h5>
+<ul class="space-y-4 text-sm text-slate-600 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Help Center</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Shipping &amp; Returns</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Jewellery Care Guide</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Size Guide</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-sm mb-6 uppercase tracking-widest">About Us</h5>
+<ul class="space-y-4 text-sm text-slate-600 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Our Heritage</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Craftsmanship</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Corporate Responsibility</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Press &amp; Media</a></li>
+</ul>
+</div>
+<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm">
+<h5 class="font-bold text-sm mb-4 uppercase tracking-widest">Newsletter</h5>
+<p class="text-xs text-slate-500 mb-6">Join our exclusive circle for early access to new collections and offers.</p>
+<div class="relative">
+<input class="w-full bg-slate-50 dark:bg-slate-900 border-none rounded-lg text-sm px-4 py-3 focus:ring-1 focus:ring-primary" placeholder="Email Address" type="email"/>
+<button class="absolute right-1 top-1 bottom-1 bg-primary text-white px-4 rounded-md font-bold text-xs uppercase tracking-widest hover:bg-primary/90 transition-all">Join</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-[10px] text-slate-400">© 2024 Potdar Jewellery. All Rights Reserved. Designed for Excellence.</p>
+<div class="flex gap-6 text-[10px] text-slate-400 font-bold uppercase tracking-widest">
+<a class="hover:text-primary" href="#">Terms of Service</a>
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Sitemap</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Checkout | Potdar Jewellery</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#11b4d4",
+                        "accent-gold": "#d4af37",
+                        "soft-pink": "#fff5f6",
+                        "background-light": "#fdfbfc",
+                        "background-dark": "#101f22",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        .premium-shadow {
+            box-shadow: 0 4px 20px -2px rgba(17, 180, 212, 0.08);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+<div class="flex items-center p-4 justify-between max-w-md mx-auto w-full">
+<button class="text-slate-900 dark:text-slate-100 flex h-10 w-10 items-center justify-center hover:bg-primary/10 rounded-full transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-slate-900 dark:text-slate-100 text-lg font-bold tracking-tight flex-1 text-center">Checkout</h1>
+<div class="w-10"></div> <!-- Spacer for symmetry -->
+</div>
+</header>
+<main class="flex-1 max-w-md mx-auto w-full px-4 py-6 space-y-8">
+<!-- Progress Indicator -->
+<div class="flex items-center justify-center gap-4 py-2">
+<div class="flex flex-col items-center gap-2">
+<div class="h-2 w-8 rounded-full bg-primary"></div>
+<span class="text-[10px] font-bold uppercase tracking-wider text-primary">Cart</span>
+</div>
+<div class="h-[2px] w-6 bg-primary/20 mb-4"></div>
+<div class="flex flex-col items-center gap-2">
+<div class="h-2 w-8 rounded-full bg-primary"></div>
+<span class="text-[10px] font-bold uppercase tracking-wider text-primary">Address</span>
+</div>
+<div class="h-[2px] w-6 bg-primary/20 mb-4"></div>
+<div class="flex flex-col items-center gap-2">
+<div class="h-2 w-12 rounded-full bg-primary"></div>
+<span class="text-[10px] font-bold uppercase tracking-wider text-primary">Payment</span>
+</div>
+</div>
+<!-- Order Summary Card -->
+<section>
+<div class="flex items-center justify-between mb-3">
+<h2 class="text-slate-900 dark:text-slate-100 text-sm font-bold uppercase tracking-widest">Order Summary</h2>
+<span class="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded">1 Item</span>
+</div>
+<div class="rounded-xl bg-white dark:bg-slate-800/50 p-4 premium-shadow border border-primary/5 flex gap-4">
+<div class="w-24 h-24 rounded-lg bg-soft-pink dark:bg-slate-700 overflow-hidden shrink-0 border border-primary/10">
+<img class="w-full h-full object-cover" data-alt="Elegant 14kt gold floral diamond stud earrings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg9WtEQPfqj5rb30PvaEmaFGSno2MQh1xCb9O3pJ7dK4nRM1H80WKzvN1EUudXr7mTN13m-QoZZ7Jl7P2_g84MYSzReUshEhj3ACcBFHZnySe0aderfQvZ5eLLTgbdFouMvkvf3I6sQxcSkVYfbT-Dpy7CNVl-140bXpOVtuW361SUkM-3wyy_R_CR0pGT47qbysXScPoq5z_7PcllBN5leU5YgA5viYOvEKS26_IdaKjaLx7Et_e_DWo97pm5SqpkJ0BLPfzi474g"/>
+</div>
+<div class="flex flex-col justify-between py-1">
+<div>
+<p class="text-[10px] font-bold text-accent-gold uppercase tracking-widest mb-1">Potdar Premium</p>
+<h3 class="text-slate-900 dark:text-slate-100 text-base font-bold leading-tight">14kt Gold Floral Studs</h3>
+<p class="text-slate-500 dark:text-slate-400 text-xs mt-1 italic">Handcrafted Perfection</p>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-primary font-bold text-lg">₹18,500</span>
+<span class="text-slate-400 text-xs">Qty: 1</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Delivery Address Section -->
+<section>
+<div class="flex items-center justify-between mb-3">
+<h2 class="text-slate-900 dark:text-slate-100 text-sm font-bold uppercase tracking-widest">Shipping Address</h2>
+<button class="text-xs font-bold text-primary hover:underline">CHANGE</button>
+</div>
+<div class="rounded-xl bg-white dark:bg-slate-800/50 p-4 premium-shadow border border-primary/5 flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-0.5">location_on</span>
+<div class="flex-1">
+<p class="text-slate-900 dark:text-slate-100 text-sm font-bold">Home</p>
+<p class="text-slate-600 dark:text-slate-400 text-xs leading-relaxed mt-1">
+                        Apt 402, Golden Heights, Rose Avenue,<br/>
+                        Worli, Mumbai - 400018
+                    </p>
+<p class="text-slate-600 dark:text-slate-400 text-xs mt-2">+91 98765 43210</p>
+</div>
+</div>
+</section>
+<!-- Payment Methods -->
+<section class="space-y-3">
+<h2 class="text-slate-900 dark:text-slate-100 text-sm font-bold uppercase tracking-widest mb-3">Payment Method</h2>
+<!-- Credit/Debit Card Selection -->
+<label class="relative flex items-center justify-between p-4 rounded-xl border-2 border-primary bg-white dark:bg-slate-800/50 cursor-pointer premium-shadow">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">credit_card</span>
+<div>
+<p class="text-slate-900 dark:text-slate-100 text-sm font-bold">Credit / Debit Card</p>
+<p class="text-slate-500 dark:text-slate-400 text-[10px]">Visa, Mastercard, Amex</p>
+</div>
+</div>
+<div class="w-5 h-5 rounded-full border-2 border-primary flex items-center justify-center">
+<div class="w-2.5 h-2.5 rounded-full bg-primary"></div>
+</div>
+</label>
+<!-- UPI Selection -->
+<label class="relative flex items-center justify-between p-4 rounded-xl border border-primary/10 bg-white dark:bg-slate-800/50 cursor-pointer">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-slate-400">account_balance_wallet</span>
+<div>
+<p class="text-slate-900 dark:text-slate-100 text-sm font-bold">UPI Payments</p>
+<p class="text-slate-500 dark:text-slate-400 text-[10px]">GPay, PhonePe, Paytm</p>
+</div>
+</div>
+<div class="w-5 h-5 rounded-full border-2 border-slate-200 dark:border-slate-700"></div>
+</label>
+<!-- Net Banking Selection -->
+<label class="relative flex items-center justify-between p-4 rounded-xl border border-primary/10 bg-white dark:bg-slate-800/50 cursor-pointer">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-slate-400">account_balance</span>
+<div>
+<p class="text-slate-900 dark:text-slate-100 text-sm font-bold">Net Banking</p>
+<p class="text-slate-500 dark:text-slate-400 text-[10px]">All major Indian banks</p>
+</div>
+</div>
+<div class="w-5 h-5 rounded-full border-2 border-slate-200 dark:border-slate-700"></div>
+</label>
+</section>
+<!-- Final Breakdown -->
+<section class="bg-primary/5 rounded-xl p-4 border border-primary/10">
+<div class="space-y-2">
+<div class="flex justify-between text-sm">
+<span class="text-slate-500 dark:text-slate-400">Subtotal</span>
+<span class="text-slate-900 dark:text-slate-100 font-medium">₹18,500</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-slate-500 dark:text-slate-400">Shipping</span>
+<span class="text-green-600 font-medium">FREE</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-slate-500 dark:text-slate-400">Tax (GST 3%)</span>
+<span class="text-slate-900 dark:text-slate-100 font-medium">₹555</span>
+</div>
+<div class="h-px bg-primary/20 my-2"></div>
+<div class="flex justify-between items-center pt-1">
+<span class="text-slate-900 dark:text-slate-100 font-bold">Grand Total</span>
+<span class="text-primary text-xl font-extrabold tracking-tight">₹19,055</span>
+</div>
+</div>
+</section>
+<!-- Trust Badges -->
+<div class="flex items-center justify-center gap-6 py-2 opacity-60">
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-accent-gold !text-lg">verified_user</span>
+<span class="text-[9px] font-bold uppercase tracking-widest">Secure</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-accent-gold !text-lg">diamond</span>
+<span class="text-[9px] font-bold uppercase tracking-widest">Certified</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-accent-gold !text-lg">local_shipping</span>
+<span class="text-[9px] font-bold uppercase tracking-widest">Insured</span>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Area -->
+<footer class="sticky bottom-0 bg-background-light dark:bg-background-dark border-t border-primary/10 p-4 pb-8 z-50">
+<div class="max-w-md mx-auto w-full">
+<button class="w-full bg-primary text-white py-4 rounded-xl font-bold text-base premium-shadow flex items-center justify-center gap-2 hover:bg-primary/90 transition-all active:scale-[0.98]">
+<span>PLACE ORDER</span>
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+<p class="text-center text-[10px] text-slate-400 mt-3 font-medium uppercase tracking-tighter">
+                Secure 256-bit encrypted checkout
+            </p>
+</div>
+</footer>
+<!-- Tab Bar for Mobile Navigation Context -->
+<nav class="fixed bottom-0 left-0 right-0 bg-white/95 dark:bg-slate-900/95 border-t border-primary/5 flex justify-around py-3 px-6 hidden">
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined !text-2xl">home</span>
+<span class="text-[10px] font-bold">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined !text-2xl">grid_view</span>
+<span class="text-[10px] font-bold">Catalog</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined !text-2xl">favorite</span>
+<span class="text-[10px] font-bold">Wishlist</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined !text-2xl">person</span>
+<span class="text-[10px] font-bold">Account</span>
+</a>
+</nav>
+</body></html>

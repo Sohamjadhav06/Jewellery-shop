@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Collections | Potdar Jewellery</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ce5a6d",
+                        "primary-light": "#f3a5b3",
+                        "gold": "#d4af37",
+                        "background-light": "#fdf8f8",
+                        "background-dark": "#1a1112",
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+
+    <!-- Shared Header -->
+    <header class="sticky top-0 z-50 glass-effect border-b border-primary/10">
+        <div class="max-w-[1440px] mx-auto px-6 h-20 flex items-center justify-between gap-4">
+            <a href="index.html" class="flex items-center gap-2 group cursor-pointer">
+                <div class="size-10 bg-primary flex items-center justify-center rounded-lg text-white">
+                    <span class="material-symbols-outlined">diamond</span>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold tracking-tight uppercase leading-none text-slate-900">Potdar <span
+                            class="text-primary font-light">Jewellery</span></h1>
+                </div>
+            </a>
+            <nav class="hidden lg:flex items-center gap-8 pl-10">
+                <a href="collections.html?material=Gold"
+                    class="text-xs font-bold tracking-widest uppercase hover:text-primary transition-colors">Gold</a>
+                <a href="collections.html?material=Diamond"
+                    class="text-xs font-bold tracking-widest uppercase hover:text-primary transition-colors">Diamond</a>
+                <a href="collections.html?category=Earrings"
+                    class="text-xs font-bold tracking-widest uppercase hover:text-primary transition-colors">Earrings</a>
+                <a href="collections.html?category=Necklaces"
+                    class="text-xs font-bold tracking-widest uppercase hover:text-primary transition-colors">Necklaces</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <button class="p-2 hover:bg-primary/10 rounded-full transition-colors relative add-to-wishlist">
+                    <span class="material-symbols-outlined">favorite</span>
+                </button>
+                <a href="checkout.html" class="p-2 hover:bg-primary/10 rounded-full transition-colors relative">
+                    <span class="material-symbols-outlined">shopping_bag</span>
+                    <span
+                        class="absolute top-1 right-1 size-4 bg-primary text-white text-[9px] rounded-full flex items-center justify-center font-bold shopping-bag-count">0</span>
+                </a>
+                <button id="loginBtn"
+                    class="size-10 rounded-full overflow-hidden border-2 border-primary/20 shadow-sm hover:border-primary transition-all">
+                    <img class="w-full h-full object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlO7-Awqsv2-rrFFgUR0w26rO37qF8eiVN2ihdanYEcfeBJJbdbu30_fWcFfvgXuXY38Mq7Vae_xKM41EMXEPV43nrKRetvjHYs9E5-W_eWH4ZcZJAfsbeZMZX2xTVfx_ByqEEt5vPnGhBiUJpejVJVl9GeEKiSm4YGZIOzi-AQB0Cu3Y7WjNTMs6hWyU_GvTeR3txlEtPUdFvu7ZLy4UMfMO9PPIfYIdrkZ8ECR0MiH4xnIPbFXZRafSb5aRNFAO0XCHBZTGeEq3f" />
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-[1440px] mx-auto px-6 py-12">
+        <!-- Breadcrumb -->
+        <nav class="flex text-xs font-bold uppercase tracking-widest text-slate-400 mb-8 items-center gap-2">
+            <a class="hover:text-primary" href="index.html">Home</a>
+            <span class="material-symbols-outlined text-sm">chevron_right</span>
+            <span class="text-primary">Collections</span>
+        </nav>
+
+        <div class="flex flex-col lg:flex-row gap-16">
+            <!-- Sidebar Filters -->
+            <aside class="w-full lg:w-72 space-y-10 flex-shrink-0 animate-fade-in">
+
+                <!-- Categories -->
+                <div class="border-t border-slate-100 pt-8">
+                    <h3 class="font-bold text-xs uppercase tracking-[0.2em] mb-6 text-slate-400">Categories</h3>
+                    <nav class="space-y-4 flex flex-col">
+                        <a href="collections.html" data-category="All"
+                            class="cat-filter text-sm font-bold text-primary transition-colors">All Collections</a>
+                        <a href="collections.html?category=Earrings" data-category="Earrings"
+                            class="cat-filter text-sm font-medium text-slate-600 hover:text-primary transition-colors">Earrings</a>
+                        <a href="collections.html?category=Necklaces" data-category="Necklaces"
+                            class="cat-filter text-sm font-medium text-slate-600 hover:text-primary transition-colors">Necklaces</a>
+                        <a href="collections.html?category=Mangalsutra" data-category="Mangalsutra"
+                            class="cat-filter text-sm font-medium text-slate-600 hover:text-primary transition-colors">Mangalsutra</a>
+                        <a href="collections.html?category=Rings" data-category="Rings"
+                            class="cat-filter text-sm font-medium text-slate-600 hover:text-primary transition-colors">Rings</a>
+                        <a href="collections.html?category=Workwear" data-category="Workwear"
+                            class="cat-filter text-sm font-medium text-slate-600 hover:text-primary transition-colors">Workwear</a>
+                        <a href="collections.html?category=Bangles" data-category="Bangles"
+                            class="cat-filter text-sm font-medium text-slate-600 hover:text-primary transition-colors">Bangles</a>
+                    </nav>
+                </div>
+
+                <!-- Price Range -->
+                <div class="border-t border-slate-100 pt-8">
+                    <h3 class="font-bold text-xs uppercase tracking-[0.2em] mb-6 text-slate-400">Price Range</h3>
+                    <div class="space-y-4">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input class="size-5 rounded border-slate-200 text-primary focus:ring-primary"
+                                type="checkbox" />
+                            <span
+                                class="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors">Under
+                                ₹10,000</span>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input class="size-5 rounded border-slate-200 text-primary focus:ring-primary"
+                                type="checkbox" />
+                            <span
+                                class="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors">₹10,000
+                                - ₹25,000</span>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input class="size-5 rounded border-slate-200 text-primary focus:ring-primary"
+                                type="checkbox" />
+                            <span
+                                class="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors">₹25,000
+                                - ₹50,000</span>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input class="size-5 rounded border-slate-200 text-primary focus:ring-primary"
+                                type="checkbox" />
+                            <span
+                                class="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors">Over
+                                ₹50,000</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Metal -->
+                <div class="border-t border-slate-100 pt-8">
+                    <h3 class="font-bold text-xs uppercase tracking-[0.2em] mb-6 text-slate-400">Metal Purity</h3>
+                    <div class="space-y-4">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input class="size-5 rounded border-slate-200 text-primary focus:ring-primary"
+                                type="checkbox" checked />
+                            <span class="text-sm font-bold text-primary">22kt Yellow Gold</span>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input class="size-5 rounded border-slate-200 text-primary focus:ring-primary"
+                                type="checkbox" />
+                            <span
+                                class="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors">18kt
+                                Rose Gold</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Promo Card -->
+                <div class="bg-primary/5 p-8 rounded-3xl border border-primary/10 space-y-4">
+                    <h4 class="text-primary font-bold text-xs uppercase tracking-widest">GOLD SCHEME</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed font-medium">Plan your future jewellery with
+                        our easy monthly saving schemes.</p>
+                    <button
+                        class="w-full bg-white text-primary text-[10px] font-bold py-3 rounded-xl border border-primary/20 hover:bg-primary hover:text-white transition-all uppercase tracking-widest">Learn
+                        More</button>
+                </div>
+            </aside>
+
+            <div class="flex-1 animate-fade-in">
+                <div class="mb-12">
+                    <h2 class="text-5xl font-serif font-bold text-slate-900 mb-4 leading-tight" id="categoryTitle">
+                        Collections</h2>
+                    <p class="text-slate-500 leading-relaxed max-w-2xl text-lg">Discover our curated selection of
+                        premium
+                        handcrafted jewellery. Every piece tells a story of modern heritage and timeless craft.</p>
+                </div>
+                <div class="flex justify-between items-center mb-10 pb-6 border-b border-slate-100">
+                    <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Showing <span
+                            class="text-slate-900" id="productCount">-</span> Designs</p>
+                    <div class="flex items-center gap-8">
+                        <div
+                            class="hidden sm:flex items-center gap-2 text-xs font-bold text-slate-400 uppercase tracking-widest">
+                            <span>Sort By:</span>
+                            <select id="productSort"
+                                class="border-none bg-transparent text-slate-900 focus:ring-0 cursor-pointer font-bold text-xs">
+                                <option>Popularity</option>
+                                <option>Newest First</option>
+                                <option>Price: Low to High</option>
+                                <option>Price: High to Low</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-10">
+                    <!-- Products will be dynamically injected here -->
+                </div>
+
+                <!-- Pagination -->
+                <div class="mt-24 flex justify-center items-center gap-2">
+                    <button
+                        class="size-12 flex items-center justify-center rounded-xl border border-slate-200 text-slate-400 hover:text-primary transition-all"><span
+                            class="material-symbols-outlined">chevron_left</span></button>
+                    <button
+                        class="size-12 flex items-center justify-center rounded-xl bg-primary text-white font-bold shadow-lg">1</button>
+                    <button
+                        class="size-12 flex items-center justify-center rounded-xl border border-slate-200 text-slate-900 font-bold hover:border-primary hover:text-primary transition-all">2</button>
+                    <button
+                        class="size-12 flex items-center justify-center rounded-xl border border-slate-200 text-slate-900 font-bold hover:border-primary hover:text-primary transition-all">3</button>
+                    <button
+                        class="size-12 flex items-center justify-center rounded-xl border border-slate-200 text-slate-400 hover:text-primary transition-all"><span
+                            class="material-symbols-outlined">chevron_right</span></button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Shared Footer and Modals -->
+    <div id="loginModal" class="hidden fixed inset-0 z-[100] modal-overlay items-center justify-center p-4">
+        <div
+            class="bg-white dark:bg-slate-900 w-full max-w-[480px] rounded-3xl shadow-2xl overflow-hidden relative animate-in zoom-in duration-300">
+            <button id="closeModal"
+                class="absolute top-4 right-4 z-10 size-10 rounded-full bg-black/5 hover:bg-black/10 transition-colors flex items-center justify-center">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <div class="p-4">
+                <div class="h-48 rounded-2xl overflow-hidden relative">
+                    <img class="w-full h-full object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOStK97tBqAROn3qnPSEOsHBpq7wsObEF0c2j-yqrHp3maw_Qqj2OmYVD-CPXJ9UogDHWnF4MizpY3c430Reda5aCkljaT43XSryJvXSFWAKFNF47r7AKdhZFDqyd-qEW6NKoFyHDYE5puXRZYbecEJquyw-6S5ZdykAFyAdX014RbXtrFZinXyKttc5sqImgTouI4Ffb269I_SHpPCy_coxTb7n4DA0jMeliIzS1zXSPgUXaQ1dVLetKHdYwwTQSv7wMTzl7EmguH" />
+                    <div class="absolute inset-0 bg-black/40 flex flex-col justify-end p-6">
+                        <p class="text-white text-2xl font-extrabold">Sign Up for <span
+                                class="text-primary-light">₹500/- Off</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="px-8 pb-8 space-y-6">
+                <div class="text-center space-y-2">
+                    <h3 class="text-2xl font-bold">Welcome Back</h3>
+                    <p class="text-sm text-slate-500">Sign in to unlock exclusive rewards.</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="space-y-2">
+                        <label class="text-xs font-bold uppercase tracking-widest text-slate-400">Mobile Number</label>
+                        <div class="flex gap-2">
+                            <span
+                                class="px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm font-bold">+91</span>
+                            <input type="tel"
+                                class="flex-1 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:ring-primary focus:border-primary"
+                                placeholder="Enter number" />
+                        </div>
+                    </div>
+                    <button
+                        class="w-full bg-primary text-white py-4 rounded-xl font-bold shadow-lg shadow-primary/20 hover:bg-primary-dark transition-all">Continue</button>
+                </div>
+                <div class="relative flex items-center py-2">
+                    <div class="flex-grow border-t border-slate-100"></div>
+                    <span class="px-4 text-[10px] font-bold text-slate-300 uppercase">Or</span>
+                    <div class="flex-grow border-t border-slate-100"></div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <button
+                        class="flex items-center justify-center gap-2 py-3 border border-slate-200 rounded-xl hover:bg-slate-50 transition-colors">
+                        <img src="https://www.google.com/favicon.ico" class="size-4" /> <span
+                            class="text-xs font-bold">Google</span>
+                    </button>
+                    <button
+                        class="flex items-center justify-center gap-2 py-3 border border-slate-200 rounded-xl hover:bg-slate-50 transition-colors">
+                        <img src="https://www.facebook.com/favicon.ico" class="size-4" /> <span
+                            class="text-xs font-bold">Facebook</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav
+        class="lg:hidden fixed bottom-0 left-0 w-full bg-white border-t border-slate-100 px-6 py-3 flex justify-between items-center z-[70] shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
+        <a id="nav-home" href="index.html" class="flex flex-col items-center gap-1 text-slate-400">
+            <span class="material-symbols-outlined text-2xl">home</span>
+            <span class="text-[9px] font-bold uppercase tracking-widest">Home</span>
+        </a>
+        <a id="nav-collections" href="collections.html" class="flex flex-col items-center gap-1 text-slate-400">
+            <span class="material-symbols-outlined text-2xl">diamond</span>
+            <span class="text-[9px] font-bold uppercase tracking-widest">Shop</span>
+        </a>
+        <a id="nav-stores" href="store.html" class="flex flex-col items-center gap-1 text-slate-400">
+            <span class="material-symbols-outlined text-2xl">location_on</span>
+            <span class="text-[9px] font-bold uppercase tracking-widest">Stores</span>
+        </a>
+        <a id="nav-bag" href="checkout.html" class="flex flex-col items-center gap-1 text-slate-400 relative">
+            <span class="material-symbols-outlined text-2xl">shopping_bag</span>
+            <span class="text-[9px] font-bold uppercase tracking-widest">Bag</span>
+            <span
+                class="absolute -top-1 -right-1 size-3.5 bg-primary text-white text-[8px] rounded-full flex items-center justify-center font-bold shopping-bag-count">0</span>
+        </a>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

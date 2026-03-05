@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Store Locator | Potdar Jewellery</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ce5a6d",
+                        "primary-light": "#f3a5b3",
+                        "gold": "#d4af37",
+                        "background-light": "#fdf8f8",
+                        "background-dark": "#1a1112",
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background-light text-slate-900 antialiased">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 glass-effect border-b border-primary/10">
+        <div class="max-w-[1440px] mx-auto px-6 h-20 flex items-center justify-between gap-4">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="size-10 bg-primary flex items-center justify-center rounded-lg text-white">
+                    <span class="material-symbols-outlined">diamond</span>
+                </div>
+                <h1 class="text-xl font-bold tracking-tight uppercase leading-none">Potdar <span
+                        class="text-primary font-light">Jewellery</span></h1>
+            </a>
+            <nav class="hidden lg:flex items-center gap-8">
+                <a href="collections.html?material=Gold"
+                    class="text-xs font-bold tracking-widest uppercase hover:text-primary transition-colors">Gold</a>
+                <a href="collections.html?material=Diamond"
+                    class="text-xs font-bold tracking-widest uppercase hover:text-primary transition-colors">Diamond</a>
+                <a href="collections.html"
+                    class="text-xs font-bold tracking-widest uppercase hover:text-primary transition-colors">Collections</a>
+                <a href="store.html"
+                    class="text-xs font-bold tracking-widest uppercase text-primary transition-colors">Our Stores</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <button id="loginBtn"
+                    class="size-10 rounded-full overflow-hidden border-2 border-primary/20 shadow-sm hover:border-primary transition-all">
+                    <img class="w-full h-full object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlO7-Awqsv2-rrFFgUR0w26rO37qF8eiVN2ihdanYEcfeBJJbdbu30_fWcFfvgXuXY38Mq7Vae_xKM41EMXEPV43nrKRetvjHYs9E5-W_eWH4ZcZJAfsbeZMZX2xTVfx_ByqEEt5vPnGhBiUJpejVJVl9GeEKiSm4YGZIOzi-AQB0Cu3Y7WjNTMs6hWyU_GvTeR3txlEtPUdFvu7ZLy4UMfMO9PPIfYIdrkZ8ECR0MiH4xnIPbFXZRafSb5aRNFAO0XCHBZTGeEq3f" />
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="relative h-[50vh] overflow-hidden">
+            <div class="absolute inset-0">
+                <img class="w-full h-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8e1gmcPsLDyPH0mIYMQzouFz_2DPAPttCNi3TYpp0yux5OQx1TXQ_3_I3Keio4KlEk8otEfRixflT90gfrd8RMGEgLe2zG1TyTIhQdW3mDYSgI1UKsC2xILvP0YKCMl4X91Iiean_lwAew8b4Kwh03nPuAiyROWv7IvcScmRGwmQD4IfWA4QixNcsZbZm9K9PtxjZaBKFYzNgth5yocuafdmxnHruzH15unjXendbyPKvwSAZjDjxe6p5ZM5GHYQRGVh3-AuFQdVo"
+                    alt="Store Front" />
+                <div class="absolute inset-0 bg-black/60"></div>
+            </div>
+            <div class="relative max-w-7xl mx-auto px-6 h-full flex flex-col justify-end pb-16 animate-fade-in">
+                <span
+                    class="bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest w-fit mb-4">Flagship
+                    Store</span>
+                <h2 class="text-5xl font-extrabold text-white mb-2">Our Store in Palus</h2>
+                <p class="text-slate-300 max-w-xl font-light">Visit our main branch to experience the heritage and
+                    craftsmanship of Potdar Jewellery in person.</p>
+            </div>
+        </section>
+
+        <!-- Content -->
+        <section class="max-w-7xl mx-auto px-6 py-24">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+                <!-- Info -->
+                <div class="lg:col-span-5 space-y-10">
+                    <div class="bg-white rounded-[32px] shadow-2xl p-10 border border-slate-50 space-y-8">
+                        <div class="flex items-center gap-4 text-primary font-bold uppercase tracking-widest text-xs">
+                            <span class="material-symbols-outlined">info</span>
+                            Store Details
+                        </div>
+
+                        <div class="space-y-8">
+                            <div class="flex gap-6">
+                                <span class="material-symbols-outlined text-primary text-3xl">location_on</span>
+                                <div>
+                                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">
+                                        Location</p>
+                                    <p class="text-sm font-bold text-slate-800 leading-relaxed">Main Road,
+                                        Palus,<br />District Sangli, Maharashtra 416310</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-6">
+                                <span class="material-symbols-outlined text-primary text-3xl">call</span>
+                                <div>
+                                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">
+                                        Contact</p>
+                                    <p class="text-sm font-bold text-slate-800 underline">+91 12345 67890</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-6 pt-6 border-t border-slate-50">
+                                <span class="material-symbols-outlined text-primary text-3xl">schedule</span>
+                                <div class="w-full">
+                                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4">
+                                        Business Hours</p>
+                                    <div class="space-y-2">
+                                        <div class="flex justify-between text-xs">
+                                            <span class="text-slate-500">Mon - Sat</span>
+                                            <span class="font-bold">10:30 AM – 8:30 PM</span>
+                                        </div>
+                                        <div class="flex justify-between text-xs">
+                                            <span class="text-slate-500">Sunday</span>
+                                            <span class="font-bold">11:00 AM – 7:00 PM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-6 space-y-4">
+                            <button
+                                class="w-full bg-primary text-white py-4 rounded-xl font-bold flex items-center justify-center gap-3 uppercase tracking-widest text-[10px] shadow-lg shadow-primary/20">
+                                <span class="material-symbols-outlined text-lg">directions</span>
+                                Get Directions
+                            </button>
+                            <button
+                                class="w-full border border-primary/20 text-primary py-4 rounded-xl font-bold flex items-center justify-center gap-3 uppercase tracking-widest text-[10px] hover:bg-primary/5 transition-all">
+                                <span class="material-symbols-outlined text-lg">calendar_month</span>
+                                Book Appointment
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map (Stylized) -->
+                <div
+                    class="lg:col-span-7 h-full min-h-[500px] rounded-[48px] overflow-hidden border border-slate-100 shadow-2xl relative">
+                    <div class="absolute inset-0 bg-slate-100">
+                        <img class="w-full h-full object-cover grayscale opacity-50 contrast-125"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFWbyDT5NFam8GV9mKIzQEOdZpy6dQdiu7vhIDawKrlzSXHK9qqsDZIVqDivI2V9Am3lsqG4d4c8wvrQ6eAF-nFnKL2HS9yC6n4NWncG1sF4pMXs5K4A2NAd6rw9imIgAv5sliFe50p7OXNN2yrzD13MH0bweVCCu8ky6wPPo7-P17TBE1jn9sluzVm0DXUd2nmLWCNaFq3akzJ7vTNNXvmAEi9PSx33MSKQTI3wTsUAVrgbZpxepdY0N55D02Ik5PjIUUiVBkp41Z" />
+                    </div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="relative animate-bounce">
+                            <span
+                                class="material-symbols-outlined text-primary text-6xl drop-shadow-2xl fill-1">location_on</span>
+                            <div
+                                class="absolute -top-12 left-1/2 -translate-x-1/2 bg-white px-4 py-2 rounded-xl shadow-2xl border border-primary/20 text-xs font-bold whitespace-nowrap">
+                                Potdar Jewellery
+                                <div
+                                    class="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-white">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-12 border-t border-slate-100 text-center opacity-40">
+        <p class="text-[10px] font-bold uppercase tracking-widest">Potdar Jewellery • Excellence Since 1954</p>
+    </footer>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav
+        class="lg:hidden fixed bottom-0 left-0 w-full bg-white border-t border-slate-100 px-6 py-3 flex justify-between items-center z-[70] shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
+        <a id="nav-home" href="index.html" class="flex flex-col items-center gap-1 text-slate-400">
+            <span class="material-symbols-outlined text-2xl">home</span>
+            <span class="text-[9px] font-bold uppercase tracking-widest">Home</span>
+        </a>
+        <a id="nav-collections" href="collections.html" class="flex flex-col items-center gap-1 text-slate-400">
+            <span class="material-symbols-outlined text-2xl">diamond</span>
+            <span class="text-[9px] font-bold uppercase tracking-widest">Shop</span>
+        </a>
+        <a id="nav-stores" href="store.html" class="flex flex-col items-center gap-1 text-slate-400">
+            <span class="material-symbols-outlined text-2xl">location_on</span>
+            <span class="text-[9px] font-bold uppercase tracking-widest">Stores</span>
+        </a>
+        <a id="nav-bag" href="checkout.html" class="flex flex-col items-center gap-1 text-slate-400 relative">
+            <span class="material-symbols-outlined text-2xl">shopping_bag</span>
+            <span class="text-[9px] font-bold uppercase tracking-widest">Bag</span>
+            <span
+                class="absolute -top-1 -right-1 size-3.5 bg-primary text-white text-[8px] rounded-full flex items-center justify-center font-bold shopping-bag-count">0</span>
+        </a>
+    </nav>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="hidden fixed inset-0 z-[100] modal-overlay items-center justify-center p-4">
+        <div
+            class="bg-white w-full max-w-[480px] rounded-3xl shadow-2xl overflow-hidden relative animate-in zoom-in duration-300">
+            <button id="closeModal"
+                class="absolute top-4 right-4 z-10 size-10 rounded-full bg-black/5 hover:bg-black/10 transition-colors flex items-center justify-center">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <div class="p-4">
+                <div class="h-48 rounded-2xl overflow-hidden relative">
+                    <img class="w-full h-full object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOStK97tBqAROn3qnPSEOsHBpq7wsObEF0c2j-yqrHp3maw_Qqj2OmYVD-CPXJ9UogDHWnF4MizpY3c430Reda5aCkljaT43XSryJvXSFWAKFNF47r7AKdhZFDqyd-qEW6NKoFyHDYE5puXRZYbecEJquyw-6S5ZdykAFyAdX014RbXtrFZinXyKttc5sqImgTouI4Ffb269I_SHpPCy_coxTb7n4DA0jMeliIzS1zXSPgUXaQ1dVLetKHdYwwTQSv7wMTzl7EmguH" />
+                    <div class="absolute inset-0 bg-black/40 flex flex-col justify-end p-6">
+                        <p class="text-white text-2xl font-extrabold">Sign Up for <span
+                                class="text-primary-light">₹500/- Off</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="px-8 pb-8 space-y-6">
+                <div class="text-center space-y-2">
+                    <h3 class="text-2xl font-bold">Welcome Back</h3>
+                    <p class="text-sm text-slate-500">Sign in to unlock exclusive rewards.</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="space-y-2">
+                        <label class="text-xs font-bold uppercase tracking-widest text-slate-400">Mobile Number</label>
+                        <div class="flex gap-2">
+                            <span
+                                class="px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm font-bold">+91</span>
+                            <input type="tel"
+                                class="flex-1 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:ring-primary focus:border-primary"
+                                placeholder="Enter number" />
+                        </div>
+                    </div>
+                    <button
+                        class="w-full bg-primary text-white py-4 rounded-xl font-bold shadow-lg shadow-primary/20 hover:bg-primary-dark transition-all">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

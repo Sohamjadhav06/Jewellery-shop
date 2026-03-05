@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Checkout | Potdar Jewellery</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ce5a6d",
+                        "primary-light": "#f3a5b3",
+                        "gold": "#d4af37",
+                        "background-light": "#fdf8f8",
+                        "background-dark": "#1a1112",
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background-light text-slate-900 antialiased">
+
+    <!-- Simple Header -->
+    <header class="bg-white border-b border-slate-100 py-6">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 group cursor-pointer">
+                <div class="size-8 bg-primary flex items-center justify-center rounded text-white"><span
+                        class="material-symbols-outlined text-sm">diamond</span></div>
+                <h2 class="text-lg font-bold tracking-tight uppercase">Potdar <span
+                        class="text-primary font-light">Jewellery</span></h2>
+            </a>
+            <div class="flex items-center gap-6 text-slate-400">
+                <button id="loginBtn"
+                    class="size-8 rounded-full overflow-hidden border border-primary/20 shadow-sm hover:border-primary transition-all">
+                    <img class="w-full h-full object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlO7-Awqsv2-rrFFgUR0w26rO37qF8eiVN2ihdanYEcfeBJJbdbu30_fWcFfvgXuXY38Mq7Vae_xKM41EMXEPV43nrKRetvjHYs9E5-W_eWH4ZcZJAfsbeZMZX2xTVfx_ByqEEt5vPnGhBiUJpejVJVl9GeEKiSm4YGZIOzi-AQB0Cu3Y7WjNTMs6hWyU_GvTeR3txlEtPUdFvu7ZLy4UMfMO9PPIfYIdrkZ8ECR0MiH4xnIPbFXZRafSb5aRNFAO0XCHBZTGeEq3f" />
+                </button>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-sm">lock</span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest">Secure Checkout</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+            <!-- Left: Forms -->
+            <div class="lg:col-span-7 space-y-12">
+                <section class="animate-fade-in">
+                    <h2 class="text-3xl font-serif font-bold text-slate-900 mb-8">Shipping Details</h2>
+                    <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="md:col-span-2 space-y-2">
+                            <label class="text-[10px] font-extrabold uppercase tracking-widest text-slate-400">Full
+                                Name</label>
+                            <input
+                                class="w-full bg-slate-50 border-slate-200 rounded-xl px-4 py-3 text-sm focus:ring-primary focus:border-primary"
+                                type="text" placeholder="John Doe" />
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-extrabold uppercase tracking-widest text-slate-400">Email
+                                Address</label>
+                            <input class="w-full bg-slate-50 border-slate-200 rounded-xl px-4 py-3 text-sm" type="email"
+                                placeholder="john@example.com" />
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-extrabold uppercase tracking-widest text-slate-400">Phone
+                                Number</label>
+                            <input class="w-full bg-slate-50 border-slate-200 rounded-xl px-4 py-3 text-sm" type="tel"
+                                placeholder="+91 98765 43210" />
+                        </div>
+                        <div class="md:col-span-2 space-y-2">
+                            <label class="text-[10px] font-extrabold uppercase tracking-widest text-slate-400">Shipping
+                                Address</label>
+                            <textarea class="w-full bg-slate-50 border-slate-200 rounded-xl px-4 py-3 text-sm h-32"
+                                placeholder="House No, Street, Landmark..."></textarea>
+                        </div>
+                    </form>
+                </section>
+
+                <section class="pt-12 border-t border-slate-100 animate-fade-in" style="animation-delay: 0.1s">
+                    <h2 class="text-3xl font-serif font-bold text-slate-900 mb-8">Payment Method</h2>
+                    <div class="grid grid-cols-1 gap-4">
+                        <label
+                            class="flex items-center justify-between p-6 rounded-2xl border-2 border-primary bg-primary/5 cursor-pointer">
+                            <div class="flex items-center gap-4">
+                                <span class="material-symbols-outlined text-primary">credit_card</span>
+                                <div>
+                                    <p class="font-bold text-sm">Credit / Debit Card</p>
+                                    <p class="text-[10px] text-slate-500 font-medium">Safe & Secure Payment</p>
+                                </div>
+                            </div>
+                            <div class="size-5 rounded-full border-4 border-primary bg-white"></div>
+                        </label>
+                        <label
+                            class="flex items-center justify-between p-6 rounded-2xl border border-slate-200 hover:border-primary/50 transition-colors cursor-pointer">
+                            <div class="flex items-center gap-4">
+                                <span class="material-symbols-outlined text-slate-400">account_balance_wallet</span>
+                                <div>
+                                    <p class="font-bold text-sm">UPI / Google Pay</p>
+                                    <p class="text-[10px] text-slate-500 font-medium">Pay via any UPI App</p>
+                                </div>
+                            </div>
+                            <div class="size-5 rounded-full border border-slate-200 bg-white"></div>
+                        </label>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right: Summary -->
+            <aside class="lg:col-span-5 sticky top-32">
+                <div class="bg-white rounded-[32px] shadow-2xl p-10 border border-slate-50 space-y-10">
+                    <h2 class="text-2xl font-serif font-bold text-slate-900">Order Summary</h2>
+
+                    <div class="space-y-6">
+                        <div class="flex gap-6">
+                            <div
+                                class="size-20 bg-slate-50 rounded-2xl overflow-hidden flex-shrink-0 border border-slate-100">
+                                <img class="w-full h-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbpXoekN-b9JQV8Rll6jgeZCrnE17aMEnF83AwULNI3QI6JcFTdBhtW7ZPwFXPX7fW6oOP19yDcYWw6z-UU2j9ln51ByKJJuBiGpyLgkxfpFv1239c0h3C7OmlhRRgNFVYyUQqdpStsH9eNZmR3xw39vhJv9_j7dvxLX2ltopX1OpU__fQZV0GyXfJcZM3gkN8wtshE0jabL0V78tdmtHLa4MebY3xHaraTkeB3JUQY63ISrpjtoYUDwd_Uls0NHlZo-Q6ZAnvAf8D" />
+                            </div>
+                            <div class="flex-1 flex flex-col justify-between py-1">
+                                <div>
+                                    <h3 class="font-bold text-sm">Morning Bloom Studs</h3>
+                                    <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mt-1">14kt
+                                        Gold • Diamond</p>
+                                </div>
+                                <p class="text-sm font-bold text-primary">₹18,499</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 pt-8 border-t border-slate-50">
+                        <div class="flex justify-between text-sm font-medium text-slate-500">
+                            <span>Subtotal</span>
+                            <span>₹18,499</span>
+                        </div>
+                        <div class="flex justify-between text-sm font-medium text-slate-500">
+                            <span>Shipping</span>
+                            <span class="text-green-600 font-bold uppercase tracking-widest">Free</span>
+                        </div>
+                        <div class="flex justify-between text-sm font-medium text-slate-500">
+                            <span>GST (3%)</span>
+                            <span>₹555</span>
+                        </div>
+                        <div class="flex justify-between pt-6 border-t border-slate-100">
+                            <span class="text-sm font-extrabold uppercase tracking-widest">Total Amount</span>
+                            <span class="text-3xl font-bold text-primary">₹19,054</span>
+                        </div>
+                    </div>
+
+                    <button
+                        class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-5 rounded-2xl transition-all shadow-xl shadow-primary/20 flex items-center justify-center gap-3 uppercase tracking-widest text-xs">
+                        Complete Order
+                    </button>
+
+                    <p class="text-[10px] text-center text-slate-400 font-medium px-4">By place your order you agree to
+                        our <a href="#" class="text-primary hover:underline">Terms of Service</a> and <a href="#"
+                            class="text-primary hover:underline">Privacy Policy</a>.</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="py-12 border-t border-slate-100 text-center opacity-40">
+        <p class="text-[10px] font-bold uppercase tracking-widest">Potdar Jewellery • Excellence Since 1954</p>
+    </footer>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav
+        class="lg:hidden fixed bottom-0 left-0 w-full bg-white border-t border-slate-100 px-6 py-3 flex justify-between items-center z-[70] shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
+        <a id="nav-home" href="index.html" class="flex flex-col items-center gap-1 text-slate-400">
+            <span class="material-symbols-outlined text-2xl">home</span>
+            <span class="text-[9px] font-bold uppercase tracking-widest">Home</span>
+        </a>
+        <a id="nav-collections" href="collections.html" class="flex flex-col items-center gap-1 text-slate-400">
+            <span class="material-symbols-outlined text-2xl">diamond</span>
+            <span class="text-[9px] font-bold uppercase tracking-widest">Shop</span>
+        </a>
+        <a id="nav-stores" href="store.html" class="flex flex-col items-center gap-1 text-slate-400">
+            <span class="material-symbols-outlined text-2xl">location_on</span>
+            <span class="text-[9px] font-bold uppercase tracking-widest">Stores</span>
+        </a>
+        <a id="nav-bag" href="checkout.html" class="flex flex-col items-center gap-1 text-slate-400 relative">
+            <span class="material-symbols-outlined text-2xl">shopping_bag</span>
+            <span class="text-[9px] font-bold uppercase tracking-widest">Bag</span>
+            <span
+                class="absolute -top-1 -right-1 size-3.5 bg-primary text-white text-[8px] rounded-full flex items-center justify-center font-bold shopping-bag-count">0</span>
+        </a>
+    </nav>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="hidden fixed inset-0 z-[100] modal-overlay items-center justify-center p-4">
+        <div
+            class="bg-white w-full max-w-[480px] rounded-3xl shadow-2xl overflow-hidden relative animate-in zoom-in duration-300">
+            <button id="closeModal"
+                class="absolute top-4 right-4 z-10 size-10 rounded-full bg-black/5 hover:bg-black/10 transition-colors flex items-center justify-center">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <div class="p-4">
+                <div class="h-48 rounded-2xl overflow-hidden relative">
+                    <img class="w-full h-full object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOStK97tBqAROn3qnPSEOsHBpq7wsObEF0c2j-yqrHp3maw_Qqj2OmYVD-CPXJ9UogDHWnF4MizpY3c430Reda5aCkljaT43XSryJvXSFWAKFNF47r7AKdhZFDqyd-qEW6NKoFyHDYE5puXRZYbecEJquyw-6S5ZdykAFyAdX014RbXtrFZinXyKttc5sqImgTouI4Ffb269I_SHpPCy_coxTb7n4DA0jMeliIzS1zXSPgUXaQ1dVLetKHdYwwTQSv7wMTzl7EmguH" />
+                    <div class="absolute inset-0 bg-black/40 flex flex-col justify-end p-6">
+                        <p class="text-white text-2xl font-extrabold">Sign Up for <span
+                                class="text-primary-light">₹500/- Off</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="px-8 pb-8 space-y-6">
+                <div class="text-center space-y-2">
+                    <h3 class="text-2xl font-bold">Welcome Back</h3>
+                    <p class="text-sm text-slate-500">Sign in to unlock exclusive rewards.</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="space-y-2">
+                        <label class="text-xs font-bold uppercase tracking-widest text-slate-400">Mobile Number</label>
+                        <div class="flex gap-2">
+                            <span
+                                class="px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm font-bold">+91</span>
+                            <input type="tel"
+                                class="flex-1 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:ring-primary focus:border-primary"
+                                placeholder="Enter number" />
+                        </div>
+                    </div>
+                    <button
+                        class="w-full bg-primary text-white py-4 rounded-xl font-bold shadow-lg shadow-primary/20 hover:bg-primary-dark transition-all">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
