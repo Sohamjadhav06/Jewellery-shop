@@ -23,7 +23,7 @@ To run this project locally, you only need a simple HTTP server. If you have Nod
     ```bash
     npx http-server ./ -p 8080
     ```
-3.  Open your browser and navigate to: [http://localhost:8080/index.html](http://localhost:8080/index.html)
+3.  Open your browser and navigate to: jewellery-shop-rosy.vercel.app
 
 ## 📂 Project Structure
 
@@ -44,3 +44,4 @@ To run this project locally, you only need a simple HTTP server. If you have Nod
 
 ---
 © 2024 Potdar Jewellery. All Rights Reserved.
+
